@@ -1,19 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Intro
+# Intro
 
 Welcome! In this code challenge, we'll be building the first two pages of our new "Buy a house" flow.
 
-You'll use the three data sources in `/data` to satisfy the designs for these pages, found in `/design`. I will play the role of your product manager / designer.
+You'll use the three data sources in [`/data`](data) to satisfy the designs for these pages, found in [`/design`](design). I will play the role of your product manager / designer.
 
 A few things to note:
 
--   We'll spend ~5 minutes setting things up, 75 minutes on the exercise, and ~10 minutes discussing it.
--   Functional correctness is most important; pixel-perfection is not. These designs are intentionally low-fidelity.
--   This exercise is designed to be a stretch for the time allowed. While we are evaluating completeness, it's OK if everything's not implemented at the 75-minute mark: we'll just discuss how you'd complete the remaining requirements if you had more time.
--   Ask questions just like you would if you were working with a product manager / designer. For example: How important is that map, really?
--   Feel free to import and use any third-party libraries, and consult the internet as needed -- just like you would normally.
--   You can find CSV & JSON parsers for the data sources in `lib/parse`
+-   ⏳ We'll spend ~5 minutes setting things up, 75 minutes on the exercise, and ~10 minutes discussing it.
+
+-   ⚖️ Functional correctness is most important; pixel-perfection is not. These designs are intentionally low-fidelity.
+
+-   🙆 This exercise is designed to be a stretch for the time allowed. While we are evaluating completeness, it's OK if everything's not implemented at the 75-minute mark: we'll just discuss how you'd complete the remaining requirements if you had more time.
+
+-   🤔 Ask questions just like you would if you were working with a product manager / designer. For example: How important is that map, really?
+
+-   ✨ Feel free to import and use any third-party libraries, and consult the internet as needed -- just like you would normally.
+
+-   🤖 You can find CSV & JSON parsers for the data sources in `lib/parse`
 
 Let's start by diving into the `/design` folder and talking requirements!
 
@@ -29,7 +34,6 @@ To run
 
 ```
 yarn dev
-
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
