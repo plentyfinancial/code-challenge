@@ -1,6 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Intro
+# First Steps
+
+Clone this repo and run `yarn install` + `yarn dev` to get started.
+
+# Challenge
 
 Welcome! In this code challenge, we'll be building the first two pages of our new "Buy a house" flow.
 
