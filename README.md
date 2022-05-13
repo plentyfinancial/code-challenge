@@ -1,13 +1,35 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Intro
 
-First, run the development server:
+Welcome! In this code challenge, we'll be building the first two pages of our new "Buy a house" flow.
 
-```bash
-npm run dev
-# or
+You'll use the three data sources in `/data` to satisfy the designs for these pages, found in `/design`. I will play the role of your product manager / designer.
+
+A few things to note:
+
+-   We'll spend ~5 minutes setting things up, 75 minutes on the exercise, and ~10 minutes discussing it.
+-   Functional correctness is most important; pixel-perfection is not. These designs are intentionally low-fidelity.
+-   This exercise is designed to be a stretch for the time allowed. While we are evaluating completeness, it's OK if everything's not implemented at the 75-minute mark: we'll just discuss how you'd complete the remaining requirements if you had more time.
+-   Ask questions just like you would if you were working with a product manager / designer. For example: How important is that map, really?
+-   Feel free to import and use any third-party libraries, and consult the internet as needed -- just like you would normally.
+-   You can find CSV & JSON parsers for the data sources in `lib/parse`
+
+Let's start by diving into the `/design` folder and talking requirements!
+
+# Development
+
+To initialize
+
+```
+yarn install
+```
+
+To run
+
+```
 yarn dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -17,18 +39,3 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

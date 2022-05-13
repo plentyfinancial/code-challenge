@@ -1,0 +1,11 @@
+{
+    "30-year fixed-rate": { "rate": "5.098%", "apr": "5.186%" },
+    "20-year fixed-rate": { "rate": "4.792%", "apr": "4.887%" },
+    "15-year fixed-rate": { "rate": "4.162%", "apr": "4.319%" },
+    "10-year fixed-rate": { "rate": "3.757%", "apr": "3.926%" },
+    "7-year ARM": { "rate": "4.720%", "apr": "4.045%" },
+    "5-year ARM": { "rate": "4.595%", "apr": "3.795%" },
+    "3-year ARM": { "rate": "2.340%", "apr": "3.371%" },
+    "30-year fixed-rate FHA": { "rate": "4.370%", "apr": "5.168%" },
+    "30-year fixed-rate VA": { "rate": "4.468%", "apr": "4.839%" }
+}
