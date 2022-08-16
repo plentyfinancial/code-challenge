@@ -6,9 +6,9 @@ Clone this repo and run `yarn install` + `yarn dev` to get started.
 
 # Challenge
 
-Welcome! In this code challenge, we'll be building the first two pages of our new "Buy a house" flow.
+Welcome! In this product engineering code challenge, we'll be building the first two pages of our new "Buy a house" flow.
 
-You'll use the three data sources in [`/data`](data) to satisfy the designs for these pages, found in [`/design`](design). I will play the role of your product manager / designer.
+You'll use the three data sources in [`/data`](data) to satisfy the designs for these pages, found in [`/design`](design). I will play the role of your product manager / designer, answering any questions about about specs/scope, in addition to collaborating with you as an engineer.
 
 A few things to note:
 
