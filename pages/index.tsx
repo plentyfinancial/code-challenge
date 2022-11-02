@@ -2,19 +2,26 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
+import { Select } from '@chakra-ui/react';
+import { HomeRegionData } from './api/home-data';
 
 const Home: NextPage = () => {
-    const [name, setName] = useState('');
+    const [data, setData] = useState<Record<string, HomeRegionData> | null>(null);
+    const [currentData, setCurrentData] = useState<HomeRegionData | null>(null);
 
-    useEffect(() => {
-        fetch('/api/hello')
-            .then((raw) => raw.json())
-            .then((data) => setName(data.name));
+    const regionChange = ((e) => {
+      setCurrentData(data[e.target.value]);
     });
 
-    let greeting = 'Hello';
-    if (name) greeting += ', ' + name;
-    greeting += '!';
+    useEffect(() => {
+        fetch('/api/home-data')
+            .then((raw) => raw.json())
+            .then((data) => setData(data));
+    });
+
+    if (!data) {
+      return null;
+    }
 
     return (
         <div className={styles.container}>
@@ -24,8 +31,21 @@ const Home: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>{greeting}</h1>
-                <p className={styles.description}>Welcome to Plenty</p>
+              <Select placeholder='Select Region' onChange={regionChange}>
+                {data && Object.keys(data).map((key) => {
+                  return <option key={key} value={key}>{data[key].location}</option>
+                })}
+              </Select>
+
+              {currentData && (
+                <>
+                  <h2>Median Price</h2>
+                  <h3>{currentData.medianPrice}</h3>
+
+                  <h2>Expected Annual Increase</h2>
+                  <h3>{currentData.expectedAnnualPriceIncrease}</h3>
+                </>
+              )}
             </main>
         </div>
     );
