@@ -7,9 +7,9 @@ const Home: NextPage = () => {
     const [name, setName] = useState('');
 
     useEffect(() => {
-        fetch('/api/hello')
+        fetch('/api/data')
             .then((raw) => raw.json())
-            .then((data) => setName(data.name));
+            .then((data) => setName(data.foo));
     });
 
     let greeting = 'Hello';

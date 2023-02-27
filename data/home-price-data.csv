@@ -1,4 +1,4 @@
-RegionID,SizeRank,RegionName,RegionType,StateName,2022-04-30
+RegionID,SizeRank,RegionName,RegionType,StateName,HomePrice
 102001,0,"United States",Country,,404333.0
 394913,1,"New York, NY",Msa,NY,692333.0
 753899,2,"Los Angeles-Long Beach-Anaheim, CA",Msa,CA,998330.0
