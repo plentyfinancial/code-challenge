@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # First Steps
 
-Clone this repo and run `yarn install` + `yarn dev` to get started.
+Clone this repo and run `npm install` + `npm dev` to get started.
 
 # Challenge
 
@@ -12,11 +12,11 @@ You'll use the three data sources in [`/data`](data) to satisfy the designs for 
 
 A few things to note:
 
--   ⏳ We'll spend ~5 minutes setting things up, 75 minutes on the exercise, and ~10 minutes discussing it.
+-   ⏳ We'll spend ~5 minutes setting things up, 50 minutes on the exercise, and ~5 minutes discussing it.
 
 -   ⚖️ Functional correctness is most important; pixel-perfection is not. These designs are intentionally low-fidelity.
 
--   🙆 This exercise is designed to be a stretch for the time allowed. While we are evaluating completeness, it's OK if everything's not implemented at the 75-minute mark: we'll just discuss how you'd complete the remaining requirements if you had more time.
+-   🙆 This exercise is designed to be a stretch for the time allowed. While we are evaluating completeness, it's OK if everything's not implemented at the 55-minute mark: we'll just discuss how you'd complete the remaining requirements if you had more time.
 
 -   🤔 Ask questions just like you would if you were working with a product manager / designer. For example: How important is that map, really?
 
@@ -31,13 +31,13 @@ Let's start by diving into the `/design` folder and talking requirements!
 To initialize
 
 ```
-yarn install
+npm install
 ```
 
 To run
 
 ```
-yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -9,10 +9,10 @@ import fs from 'fs';
         const path = join(process.cwd(), 'data', 'my-data.csv');
         const data = await parseCSV(path);
 */
-export const parseCSV = (filepath: string): Promise<any[]> => {
+export const parseCSV = <D = any>(filepath: string): Promise<D[]> => {
     return new Promise((resolve, reject) => {
         try {
-            const results: any[] = [];
+            const results: D[] = [];
             fs.createReadStream(filepath)
                 .pipe(csv())
                 .on('data', (data) => results.push(data))
