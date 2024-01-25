@@ -1,10 +1,12 @@
 import csv from 'csv-parser';
 import fs from 'fs';
+import { join } from 'path';
 
 /*
     Parses a CSV. Returns a Promise for parsed results.
 
     Example:
+        import { join } from 'path';
 
         const path = join(process.cwd(), 'data', 'my-data.csv');
         const data = await parseCSV(path);
@@ -29,8 +31,9 @@ export const parseCSV = <D = any>(filepath: string): Promise<D[]> => {
     Parses JSON. Returns a Promise for parsed results.
 
     Example:
+        import { join } from 'path';
 
-        const path = join(process.cwd(), 'data', 'my-data.csv');
+        const path = join(process.cwd(), 'data', 'my-data.json');
         const data = await parseJSON(path);
 */
 export const parseJSON = (filepath: string): Promise<Record<string, any>> => {
